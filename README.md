@@ -25,18 +25,31 @@ Are these representations causally involved in arithmetic behavior, or merely co
 
 We study internal representations of a pretrained transformer using the following pipeline:
 1.	Synthetic Arithmetic Data
+   
   •  Templated arithmetic prompts with labeled operators
+  
   •	 Controlled structure to minimize confounds
-3.	Activation Collection
+  
+2.	Activation Collection
+   
   •	Token-level residual stream activations
+  
   • MLP post-activation hooks via TransformerLens
-4.	Linear Probing
+  
+3.	Linear Probing
+   
   •	Logistic regression probes trained to predict operator identity
+  
   •	Evaluation on held-out data
-5.	Analysis
+  
+4.	Analysis
+   
   •	Train/test accuracy
+  
   •	Probe coefficient norms
+  
   •	Failure mode analysis
+  
 This pipeline is designed to be fully reproducible and extensible toward causal interventions.
 
 **Experimental Setup**
