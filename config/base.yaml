@@ -1,0 +1,4 @@
+model: gpt2-small
+layer: 9
+dataset: gsm8k
+device: cpu
